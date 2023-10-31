@@ -14,9 +14,29 @@ public class LinkedGL<E> implements MyList<E> {
     int size;
 
     public LinkedGL(E[] contents) {
-        // Fill in this constructor
+        this.front = new Node(null, null);
+        this.size = contents.length;
+
     }
 
     // Fill in all methods
+    public boolean isEmpty(){
+        if (this.size != 0){
+            return false;
+        } return true;
+    }
+
+    public void transformAll(MyTransformer mt){
+
+    }
+    public void chooseAll(MyChooser mc){
+
+    }
+
+    public E[] toArray(){
+    return new E[];
+    }
+
+
 
 }
